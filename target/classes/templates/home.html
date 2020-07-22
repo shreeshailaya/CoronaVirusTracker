@@ -17,6 +17,11 @@
     <h1 class="display-4" th:text="${totalReportedCases}"></h1>
     <p class="lead"> Total cases reported as of today</p>
     <hr class="my-4">
+    <h2 class="display-5" th:text="${totalNewCases}"></h2>
+    <p class="lead"> Total cases reported today</p>
+
+
+
 
 </div>
 
@@ -28,8 +33,8 @@
         <th>Change Since Last Day</th>
     </tr>
     <tr th:each="ls : ${locationstate}">
-        <td th:text="${ls.State}">Onions</td>
-        <td th:text="${ls.Country}">2.41</td>
+        <td th:text="${ls.Country}"></td>
+        <td th:text="${ls.State}"></td>
         <td th:text="${ls.LatestTotalCases}">0</td>
         <td th:text="${ls.diffFromPrevDay}">0</td>
 
